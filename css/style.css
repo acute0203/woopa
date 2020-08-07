@@ -506,7 +506,7 @@
        @media (min-width: 768px) {
        .visible-desktop {
            width: 110px;
-           height: 170px;
+           height: auto;
            }
        .visible-phone {
            display: none;
@@ -520,7 +520,7 @@
        @media (max-width: 480px) {
        .visible-phone {
             width: 110px;
-            height: 170px;
+            height: auto;
             }
         .visible-desktop {
             display: none;
