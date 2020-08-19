@@ -180,9 +180,9 @@
             let redirect = !allowBrowser();
 
             if (/iPhone|iPad/i.test(userAgent) && redirect) {
-                location.href = "safari-https://woopa.fit/";
+                location.href = "googlechromes://woopa.fit/";
                 setTimeout(function() {
-                    location.href = "safari-https://woopa.fit/";
+                    location.href = "googlechromes://woopa.fit/";
                 }, 1000);
             }
 
