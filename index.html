@@ -47,29 +47,6 @@
     a:link { color: #000000; text-decoration: none}
     a:visited { color: #000000; text-decoration: none}
     </style>
-    <script>
-//<![CDATA[
-/*處理分享到 Line 的連結*/
-$("a").each(function () {
-var href = this.href;
-
-// http 網址才處理
-if (href.indexOf("http") != 0 || href.indexOf("//") < 0){
-return;
-}
-
-// 網址沒有參數 ? 時, 直接加參數
-if (href.indexOf("?") < 0) {
-href += "?openExternalBrowser=1";
-} else {
-// 網址有參數 ? 時, 用 & 加參數
-href += "&openExternalBrowser=1";
-}
-
-this.href = href;
-});
-//]]>
-</script>
 </head>
 
 <body>
@@ -203,9 +180,9 @@ this.href = href;
             let redirect = !allowBrowser();
 
             if (/iPhone|iPad/i.test(userAgent) && redirect) {
-                location.href = "googlechromes://woopa.fit/";
+                location.href = "safari-https://woopa.fit/";
                 setTimeout(function() {
-                    location.href = "googlechromes://woopa.fit/";
+                    location.href = "safari-https://woopa.fit/";
                 }, 1000);
             }
 
