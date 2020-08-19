@@ -485,6 +485,7 @@
            .footer {
                height: 200px;
                margin: 0;
+               margin-top: 20px;
            }
            .footer .footerBgColor {
                width: 85%;

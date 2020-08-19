@@ -180,6 +180,12 @@ body, html {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 1024px) {
+    .tablink:hover {
+    opacity: 1;
+}
+}
+
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
@@ -222,8 +228,8 @@ body, html {
 
 
 
-        <button class="tablink" onclick="openPage('act', this, 'red')"  id="defaultOpen">活動照片</button>
-        <button class="tablink" onclick="openPage('gym', this, 'green')">Home GYM</button>
+        <button class="tablink" onclick="openPage('act', this)"  id="defaultOpen">活動照片</button>
+        <button class="tablink" onclick="openPage('gym', this)">Home GYM</button>
         <div id="act" class="tabcontent">
         <section class="wipe-right" style="width:100%;padding:0px;">
             <a href="./國美晴空社區團課.html">
@@ -530,13 +536,15 @@ body, html {
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "white";
   }
 
   // Show the specific tab content
   document.getElementById(pageName).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
-  //elmnt.style.backgroundColor = color;
+  elmnt.style.backgroundColor = "white";
+  elmnt.style.color = "rgba(178, 114, 50)";
 }
 
 // Get the element with id="defaultOpen" and click on it
