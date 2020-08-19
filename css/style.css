@@ -12,7 +12,6 @@
            list-style: none;
            transition: all .5s;
        }
-
        body {
            font-size: 18px;
            font-family: 'Noto Sans TC', sans-serif;
@@ -47,6 +46,9 @@
        @media (max-width:767px) {
            .page {
                max-width: 100%
+           }
+           nav .btn {
+           font-size: 18px;
            }
        }
 
