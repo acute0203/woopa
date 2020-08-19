@@ -286,6 +286,12 @@
         var gallery = $('.gallery a').simpleLightbox({navText:    ['&lsaquo;','&rsaquo;']});
     });
         </script>
+        <script>
+        if (window.innerWidth < 960) {
+           var closeLine = document.getElementsByClassName("closeLine")[0];
+           closeLine.click();
+        }
+        </script>
 </body>
 
 </html>

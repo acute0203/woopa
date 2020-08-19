@@ -553,6 +553,12 @@ body, html {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
         </script>
+        <script>
+        if (window.innerWidth < 960) {
+           var closeLine = document.getElementsByClassName("closeLine")[0];
+           closeLine.click();
+        }
+        </script>
 </body>
 
 </html>
