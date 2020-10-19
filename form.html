@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        function Auth() {
+            var URL = 'https://access.line.me/oauth2/v2.1/authorize?';
+            URL += 'response_type=code';
+            URL += '&client_id=1654867937';  //請換成你自己的 client_id
+            URL += '&redirect_uri=https://dd0895cbd049.ngrok.io/'; //請換成你自己的 callback url
+            URL += '&scope=profile%20openid%20email';
+            URL += '&state=123453sdfgfd';
+            //導引到LineLogin
+            window.location.href = URL;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="Auth();">點選這裡連結到LineLogin</button>
+</body>
+</html>
