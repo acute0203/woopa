@@ -349,8 +349,8 @@
                           email: result.value.email,
                           message: result.value.message,
                       })
-                    }).then((response) => {
-                        console.log(response);
+                  }).then((asyncresponse) => {
+                        console.log(await response);
                         return response.json();
                       }).then((jsonData) => {
                         console.log(jsonData);
