@@ -337,6 +337,11 @@
                 }).then((result) => {
 
                     let url = 'https://api.maio.co/woopa-site-planning/';
+
+
+
+
+
                     fetch(url, {
                       method: 'POST',
                       // headers 加入 json 格式
@@ -349,10 +354,21 @@
                           email: result.value.email,
                           message: result.value.message,
                       })
-                  }).then((async response) => {
-                        console.log(await response);
-                        return response.json();
-                      }).then((jsonData) => {
+                  }).then(
+                      function(response) {
+                          if (response.status !== 200) {
+                            console.log('Looks like there was a problem. Status Code: ' +
+                              response.status);
+                            return;
+                          }
+
+                          // Examine the text in the response
+                          response.json().then(function(data) {
+                            console.log(data);
+                          });
+                        }
+
+                  ).then((jsonData) => {
                         console.log(jsonData);
                         //window.location.replace("https://woopa.fit/?message="+jsonData["message"]);
                       }).catch((err) => {
