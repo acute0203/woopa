@@ -342,6 +342,11 @@
                                 email: result.value.email,
                                 message: result.value.message,
                             })
+                            .done(function(data) {
+                                if (data.status == 302) {
+                                    location.href = data.getResponseHeader("Location");
+                                }
+                            })
                     })
                 })
             }
