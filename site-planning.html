@@ -338,6 +338,7 @@
                     $.ajax({url: 'https://api.maio.co/contact-us/',
                             dataType: 'json',
                             type: "POST",
+                            crossDomain: true,
                             data: {
                                 name: result.value.name,
                                 phone: result.value.phone,
