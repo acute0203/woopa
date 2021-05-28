@@ -335,7 +335,7 @@
                         }
                     }
                 }).then((result) => {
-                    
+
                     let url = 'https://api.maio.co/contact-us/';
                     fetch(url, {
                       method: 'POST',
@@ -350,7 +350,6 @@
                           message: result.value.message,
                       })
                     }).then((response) => {
-
                         return response.json();
                       }).then((jsonData) => {
                         console.log(jsonData);
