@@ -335,19 +335,19 @@
                         }
                     }
                 }).then((result) => {
-                    return new Promise(function(resolve) {
-                        $.post('https://api.maio.co/contact-us/', {
+                    $.ajax({url: 'https://api.maio.co/contact-us/',
+                            dataType: 'json',
+                            type: "POST",
+                            data: {
                                 name: result.value.name,
                                 phone: result.value.phone,
                                 email: result.value.email,
                                 message: result.value.message,
-                            },function(data,status,xhr){
+                            },
+                            success: function (data){
                                 console.log(data);
-                                console.log(status);
-                                console.log(xhr);
                             }
-                        )
-                    })
+                        })
                 })
             }
         });
