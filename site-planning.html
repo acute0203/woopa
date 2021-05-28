@@ -336,6 +336,7 @@
                     }
                 }).then((result) => {
                     $.ajax({url: 'https://api.maio.co/contact-us/',
+                            contentType: 'application/json',
                             dataType: 'json',
                             type: "POST",
                             headers: {'Access-Control-Allow-Origin': 'https://woopa.fit' },
