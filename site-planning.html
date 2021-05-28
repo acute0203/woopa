@@ -341,12 +341,12 @@
                                 phone: result.value.phone,
                                 email: result.value.email,
                                 message: result.value.message,
-                            })
-                            .done(function(data) {
-                                if (data.status == 302) {
-                                    location.href = data.getResponseHeader("Location");
-                                }
-                            })
+                            },function(data,status,xhr){
+                                console.log(data);
+                                console.log(status);
+                                console.log(xhr);
+                            }
+                        )
                     })
                 })
             }
