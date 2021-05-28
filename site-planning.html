@@ -335,9 +335,10 @@
                         }
                     }
                 }).then((result) => {
-                    $.ajax({url: 'https://vb0ubsejg3.execute-api.us-west-2.amazonaws.com/prod',
+                    $.ajax({url: 'https://api.maio.co/contact-us/',
                             dataType: 'json',
                             type: "POST",
+                            headers: {'Access-Control-Allow-Origin': 'https://woopa.fit' },
                             crossDomain: true,
                             data: {
                                 name: result.value.name,
