@@ -346,6 +346,7 @@
                           url: url,
                           type: "POST",
                           crossDomain: true,
+                          headers: {  'Access-Control-Allow-Origin': 'https://woopa.fit' },
                           data: JSON.stringify({
                               name: result.value.name,
                               phone: result.value.phone,
