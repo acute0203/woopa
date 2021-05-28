@@ -345,7 +345,7 @@
                     $.ajax({
                           url: url,
                           type: "POST",
-                          headers: {'Access-Control-Allow-Methods':'OPTIONS,POST','Access-Control-Allow-Headers':'Origin, X-Requested-With, Content-Type, Accept, Authorization','Access-Control-Allow-Origin': '*' },
+                          headers: {'Access-Control-Allow-Methods':'OPTIONS,POST','Access-Control-Allow-Headers':'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token','Access-Control-Allow-Origin': '*' },
                           crossDomain: true,
                           data: JSON.stringify({
                               name: result.value.name,
