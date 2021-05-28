@@ -350,6 +350,7 @@
                           message: result.value.message,
                       })
                     }).then((response) => {
+                        console.log(response.status);
                         console.log(response);
                         return response;
                       }).then((jsonData) => {
