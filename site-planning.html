@@ -356,6 +356,7 @@
                           contentType: 'multipart/form-data',
                           success: function success(result) {
                               console.log(result);
+                              window.location.replace("https://woopa.fit/?message="+result["message"]);
                           },
                           error: function error(_error5) {
                             console.log(_error5);
