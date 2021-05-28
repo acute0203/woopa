@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="all">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="copyright" content="Copyright © 2020 WooPA FIT. All rights reserved">
+    <meta name="description" content="WooPA FIT 致力於減少人們與健身之間的隔閡 希望豐富的健身與教學經驗，能讓健身與健康 變得更加親民。">
+    <meta name="distribution" content="Taiwan">
+    <meta name="geo.region" content="tw">
+
+    <!--FACEBOOK網頁分享-->
+    <meta property="og:url" content="https://woopa.fit/">
+    <meta property="og:title" content="WooPA FIT!">
+    <meta property="og:site_name" content="WooPA FIT!您的健身管家">
+    <meta property="og:image" content="https://raw.githubusercontent.com/acute0203/woopa/master/img/smallLogo.png">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128">
+    <meta property="og:description" content="WooPA FIT 致力於減少人們與健身之間的隔閡 希望豐富的健身與教學經驗，能讓健身與健康 變得更加親民。">
+    <meta property="og:type" content="website">
+    <!--FACEBOOK網頁分享-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KZRBPXK');</script>
+    <!-- End Google Tag Manager -->
+
+    <title>WooPA FIT</title>
+    <link rel='icon' href='img/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icomoon/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .inline {
+            display: inline-block;
+        }
+
+        .swal-wide {
+            width: 850px !important;
+        }
+    </style>
+    <style>
+        .icon-text {
+            padding-left: 5px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .icon-text {
+                display: none;
+            }
+
+            nav .btn {
+                font-size: 18px;
+            }
+        }
+
+        a:link {
+            color: #000000;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: #000000;
+            text-decoration: none
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZRBPXK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="page bgWhite">
+        <header>
+            <nav>
+                <div class="logo wow fadeInRight" data-wow-duration="1s"><a href="index.html"><img src="img/logo.svg"></a></div>
+                <div>
+                    <!--<button class="btn wow fadeInLeft" data-wow-duration="1s" onclick="location.href='https://blog.woopa.fit'" ><div class="icon-quill inline" style="font-family: icomoon;"></div><div class="icon-text inline">部落格</div></button>-->
+                    <button class="btn wow fadeInLeft" data-wow-duration="1s" onclick="location.href='./album-tab.html'">
+                        <div class="icon-images inline" style="font-family: icomoon;"></div>
+                        <div class="icon-text inline">活動照片</div>
+                    </button>
+                    <button class="btn wow fadeInLeft" data-wow-duration="1s" onclick="location.href='https://shop.woopa.fit'">
+                        <div class="icon-cart inline" style="font-family: icomoon;"></div>
+                        <div class="icon-text inline">SHOP</div>
+                    </button>
+                </div>
+            </nav>
+            <div class="banner">
+                <div></div>
+                <img src="img/logoLarge.png" class="wow bounceIn" data-wow-duration="1s">
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="sloganView">
+                    <div class="sloganTitle wow fadeInLeft" data-wow-duration="1s">場域整體規劃</div>
+                    <div class="contentText sloganText wow fadeInRight" data-wow-duration="1s">
+
+                        我們擅長將您的需求與預算進行拆分，歸類，逐個分析，留其精華，提煉出需求核心本質。
+                        <br>
+                        我們追求的規劃理念也正是力求簡約，為您呈現一種觸動心靈的感覺，這正是我們品牌所蘊含的深層文化。
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-img">
+                <div class="infoView">
+                    <img src="img/conversation.jpeg" class="imgBox img01 wow fadeInRight" data-wow-duration="1s">
+                    <div class="gymIcon gymIcon01"><img src="img/paste.svg"></div>
+                    <div class="gymTitleView gymTitle01 wow fadeInLeft" data-wow-duration="1s"></div>
+                    <div class="borderStyle border01"></div>
+                    <div class="infoText01">
+                        <div class="infoTitle bgWhite">步驟一、資訊收集</div>
+                        <div class="infoSubTitle">Information Colle<div style="display: inline;color:white;">c</div>tion</div>
+                        <div class="contentText infoContent">
+                            我們將收集您的人文背景、物業建築資料，拍攝照片並丈量場地尺寸，規劃出設計任務書。
+                        </div>
+                    </div>
+                </div>
+                <div class="infoView">
+                    <img src="img/3D_image.jpg" class="imgBox img02 wow fadeInLeft" data-wow-duration="1s">
+                    <div class="gymIcon gymIcon02"><img src="img/3d_rotation.svg"></div>
+                    <div class="borderStyle border02"></div>
+                    <div class="infoText02">
+                        <div class="infoTitle">步驟二、3D圖片輸出</div>
+                        <div class="infoSubTitle">3D Image Layout</div>
+                        <div class="contentText infoContent">
+                            我們將研究周邊競爭者比較，找出客戶競爭力，細緻規劃健身、教室、櫃台、衛浴及辦公各分區的器材擺放。並提供3D圖片的方式，呈現客戶設計要點，規劃三維空間與細節綜合考慮，提供完器材設備計畫。
+                        </div>
+                    </div>
+                </div>
+                <div class="infoView">
+                    <img src="img/fixAndQuo.jpg" class="imgBox img04 wow fadeInRight" data-wow-duration="1s">
+                    <div class="gymIcon gymIcon01"><img src="img/truck.svg"></div>
+                    <div class="gymTitleView gymTitle01 wow fadeInLeft" data-wow-duration="1s"></div>
+                    <div class="borderStyle border04"></div>
+                    <div class="infoText04">
+                        <div class="infoTitle bgWhite">步驟三、定樣與報價</div>
+                        <div class="infoSubTitle">Fixing & Quotation</div>
+                        <div class="contentText infoContent">
+                            根據您的需求與3D配置圖的設備定樣，決定設備、材料，以符合您心中最佳化設計效果。我們會為您擬定最優惠的價格。
+                        </div>
+                    </div>
+                </div>
+                <div class="infoView">
+                    <img src="img/work_done.jpg" class="imgBox img03 wow fadeInLeft" data-wow-duration="1s">
+                    <div class="gymIcon gymIcon03"><img src="img/icon-1.svg"></div>
+                    <div class="gymTitleView gymTitle02 wow fadeInRight" data-wow-duration="1s"></div>
+                    <div class="borderStyle border03"></div>
+                    <div class="infoText03">
+                        <div class="infoTitle bgText">步驟四、交貨</div>
+                        <div class="infoSubTitle bgText mbgText">Fixing & Quotation</div>
+                        <div class="contentText infoContent">
+                            我們已有豐富的配合經驗，不但配合裝修現場器材設備交底日，且由我們的技術人員就施工工藝、細節、完整組裝設備驗。您的滿意將是我們最大的原動力。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+        <footer class="footer">
+            <div class="gymTitleBg"></div>
+            <div class="footerBgColor">
+                <img src="img/logoWhite.png">
+                <div class="contactView">
+                    <div class="contactTitle">Contact US</div>
+                    <div class="contactInfo">
+                        <div class="contactSubTitle">Email</div>
+                        <a href="mailto:cs@woopa.fit">
+                            <div class="contactText">cs@woopa.fit</div>
+                        </a>
+                    </div>
+                    <div class="contactInfo">
+
+
+                    </div>
+                </div>
+        </footer>
+    </div>
+    <div class="addLine">
+
+        <div class="visible-desktop">
+            <img src="https://qr-official.line.me/sid/M/647ptiwy.png">
+        </div>
+
+        <div class="visible-phone">
+            <a href="https://lin.ee/3IvzJ3N"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0"></a>
+        </div>
+        <span class="orangeText"><br>快上 Line@<br>
+            追蹤新資訊</span>
+        <div class="closeLine">close</div>
+        <div class="openLine"></div>
+
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        var closeLine = document.getElementsByClassName("closeLine")[0];
+        var openLine = document.getElementsByClassName("openLine")[0];
+        var addLine = document.getElementsByClassName("addLine")[0];
+        closeLine.addEventListener("click", function() {
+            addLine.style.marginRight = "-180px";
+            closeLine.style.marginLeft = "-100px";
+            openLine.style.marginLeft = "-100px";
+            openLine.style.display = "block";
+            closeLine.innerText = "open";
+        });
+        openLine.addEventListener("click", function() {
+            addLine.style.marginRight = "0";
+            closeLine.style.marginLeft = "0";
+            openLine.style.display = "noen";
+            closeLine.innerText = "close";
+        });
+    </script>
+    <script>
+        let userAgent = navigator.userAgent;
+
+        function allowBrowser() {
+            if (/line/i.test(navigator.userAgent.toLowerCase())) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        let redirect = !allowBrowser();
+
+        if (/iPhone|iPad/i.test(userAgent) && redirect) {
+            location.href = "https://woopa.fit?openExternalBrowser=1";
+            //location.href = "googlechromes://woopa.fit/";
+            setTimeout(function() {
+                location.href = "googlechromes://woopa.fit/";
+            }, 1000);
+        }
+
+        if (/Android/i.test(userAgent) && redirect) {
+            location.href =
+                "intent:https://woopa.fit/#Intent;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;component=com.android.browser/com.android.browser.BrowserActivity;end";
+            setTimeout(function() {
+                location.href =
+                    "intent:https://woopa.fit/#Intent;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;component=com.android.browser/com.android.browser.BrowserActivity;end";
+            }, 1000);
+        }
+    </script>
+    <script>
+        if (window.innerWidth < 960) {
+            var closeLine = document.getElementsByClassName("closeLine")[0];
+            closeLine.click();
+        }
+
+        function post(path, params, method = 'post') {
+
+            // The rest of this code assumes you are not using a library.
+            // It can be made less verbose if you use one.
+            const form = document.createElement('form');
+            form.method = method;
+            form.action = path;
+
+            for (const key in params) {
+                if (params.hasOwnProperty(key)) {
+                    const hiddenField = document.createElement('input');
+                    hiddenField.type = 'hidden';
+                    hiddenField.name = key;
+                    hiddenField.value = params[key];
+
+                    form.appendChild(hiddenField);
+                }
+            }
+
+            document.body.appendChild(form);
+            form.submit();
+        }
+    </script>
+    <script>
+        $(window).on("scroll", function() {
+            var scrollHeight = $(document).height();
+            var scrollPosition = $(window).height() + $(window).scrollTop();
+            if ((scrollHeight - scrollPosition) / scrollHeight <= 0.02) {
+                Swal.fire({
+
+                    title: '心動了嗎？立即聯繫客服人員！',
+                    icon: 'info',
+                    html: `<input type="text" id="name" class="swal2-input" placeholder="您的姓名">
+                             <input type="text" id="phone" class="swal2-input" placeholder="您的電話">
+                             <input type="email" id="email" class="swal2-input" placeholder="您的電子郵件信箱">
+                             <textarea class="form-control" id="message" placeholder="把您的情況告訴我們！" rows="10" name="message"></textarea>`,
+
+                    confirmButtonText: '傳送！',
+                    customClass: 'swal-wide',
+                    focusConfirm: false,
+                    preConfirm: () => {
+                        const name = Swal.getPopup().querySelector('#name').value
+                        const phone = Swal.getPopup().querySelector('#phone').value
+                        const email = Swal.getPopup().querySelector('#email').value
+                        const message = Swal.getPopup().querySelector('#message').value
+                        if (!name) {
+                            Swal.showValidationMessage(`請輸入我們方便稱呼您的姓名！`)
+                        }
+                        if (!phone) {
+                            Swal.showValidationMessage(`請輸入您的電話我們好方便聯絡您！`)
+                        }
+                        if (!email) {
+                            Swal.showValidationMessage(`請輸入您的Email我們好方便聯絡您！`)
+                        }
+                        if (!message) {
+                            Swal.showValidationMessage(`請告訴我們您的資訊，我們方便做分析！`)
+                        }
+                        return {
+                            name: name,
+                            phone: phone,
+                            email: email,
+                            message: message
+                        }
+                    }
+                }).then((result) => {
+                    return new Promise(function(resolve) {
+                        $.post('https://api.maio.co/contact-us/', {
+                                name: result.value.name,
+                                phone: result.value.phone,
+                                email: result.value.email,
+                                message: result.value.message,
+                            })
+                            .done(function(data) {
+                                console.log(data);
+                                window.location.replace("https://woopa.fit/");
+
+                            })
+                    })
+                })
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -68,6 +68,24 @@
             text-decoration: none
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script>
+	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return false;
+};
+	</script>
 </head>
 
 <body>
@@ -245,6 +263,24 @@
             closeLine.click();
         }
     </script>
+    <script>
+	var message = getUrlParameter("message");
+	if (message=="success"){
+		Swal.fire({
+            icon: 'success',
+            title: '表單傳送完成！',
+			text: '客服人員將會後續與您聯繫！',
+            timer: 2000,
+			showConfirmButton: false,
+        })
+	} else if(message=="error"){
+		Swal.fire({
+            icon: 'error',
+            title: '表單傳送失敗！',
+			html: '請將您的需求傳送至 <a href="mailto:i@maio.co">i@maio.co</a>'
+        })
+	}
+	</script>
 </body>
 
 </html>

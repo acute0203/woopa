@@ -179,6 +179,11 @@
            position: absolute;
        }
 
+       .img04 {
+           width: 500px;
+           margin-left: -50px;
+       }
+
        .gymIcon01 {
            position: absolute;
            top: 70px;
@@ -252,6 +257,13 @@
            left: -180px;
        }
 
+       .border04 {
+           width: 800px;
+           height: 500px;
+           top: 150px;
+           left: -200px;
+       }
+
        .infoText01 {
            width: 500px;
            position: absolute;
@@ -273,6 +285,14 @@
            position: absolute;
            top: 485px;
            left: -150px;
+           z-index: 2;
+       }
+
+       .infoText04 {
+           width: 400px;
+           position: absolute;
+           top: 380px;
+           left: -50px;
            z-index: 2;
        }
 
@@ -437,7 +457,7 @@
                width: 180px;
            }
            .sloganTitle {
-               font-size: 3.2em
+               font-size: 2.8em;
            }
            .sloganView {
                height: fit-content;
@@ -467,7 +487,8 @@
            }
            .img01,
            .img02,
-           .img03 {
+           .img03,
+           .img04 {
                width: 100%;
                margin: 0;
                position: static;
@@ -477,7 +498,8 @@
            }
            .infoText01,
            .infoText02,
-           .infoText03 {
+           .infoText03,
+           .infoText04 {
                position: static;
                width: 100%;
            }
