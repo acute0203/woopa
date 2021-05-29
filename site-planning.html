@@ -13,7 +13,7 @@
 
     <!--FACEBOOK網頁分享-->
     <meta property="og:url" content="https://woopa.fit/">
-    <meta property="og:title" content="WooPA FIT!">
+    <meta property="og:title" content="WooPA FIT! - 場域整體規劃">
     <meta property="og:site_name" content="WooPA FIT!您的健身管家">
     <meta property="og:image" content="https://raw.githubusercontent.com/acute0203/woopa/master/img/smallLogo.png">
     <meta property="og:image:width" content="128">
@@ -33,7 +33,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-KZRBPXK');</script>
     <!-- End Google Tag Manager -->
 
-    <title>WooPA FIT</title>
+    <title>WooPA FIT! - 場域整體規劃</title>
     <link rel='icon' href='img/favicon.ico' type='image/x-icon' />
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -315,7 +315,7 @@
         $(window).on("scroll", function() {
             var scrollHeight = $(document).height();
             var scrollPosition = $(window).height() + $(window).scrollTop();
-            if ((scrollHeight - scrollPosition) / scrollHeight <= 0.02) {
+            if ((scrollHeight - scrollPosition) / scrollHeight <= 0.01) {
                 Swal.fire({
 
                     title: '心動了嗎？立即聯繫客服人員！',
@@ -353,13 +353,7 @@
                         }
                     }
                 }).then((result) => {
-
                     let url = 'https://api.maio.co/woopa-site-planning/';
-
-
-
-
-
                     $.ajax({
                         url: url,
                         type: "POST",
@@ -380,27 +374,6 @@
                             console.log(_error5);
                         }
                     });
-
-                    /*
-
-                    $.ajax({url: 'https://api.maio.co/contact-us/',
-                            contentType: 'application/json',
-                            dataType: 'json',
-                            type: "POST",
-                            headers: {'Access-Control-Allow-Methods':'OPTIONS,POST','Access-Control-Allow-Headers':'Origin, X-Requested-With, Content-Type, Accept, Authorization','Access-Control-Allow-Origin': '*' },
-                            crossDomain: true,
-                            data: {
-                                name: result.value.name,
-                                phone: result.value.phone,
-                                email: result.value.email,
-                                message: result.value.message,
-                            },
-                            success: function (data){
-                                console.log(data);
-                            }
-                        })
-                        */
-
 
                 })
             }
